@@ -1,66 +1,119 @@
-:root{
-    --primary-color:#055a05;
-    --secondary-color:#f4a261;
-    --accent1-color:#264653;
-    --accent2-color:#e9c46a;
-    --heading-font:"Times New Roman","Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+/* ------------------------
+   CSS Variables
+------------------------ */
+:root {
+    --primary-color: #1E90FF;    /* Blue for headings */
+    --accent1-color: #FF6347;    /* Accent/red for overlays, highlights */
+    --body-font: 'Arial', sans-serif;
+    --heading-font: 'Georgia', serif;
 }
 
-*{
+/* ------------------------
+   Reset
+------------------------ */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- 
-body{
+
+/* ------------------------
+   Body Styling
+------------------------ */
+body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
 
-header, main,footer{
-    width: 960px;
+/* ------------------------
+   Layout Width
+------------------------ */
+header, main, footer {
+    width: 840px;
     margin: 0 auto;
 }
 
+/* ------------------------
+   Headings
+------------------------ */
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav,p,section,article {
+/* ------------------------
+   Basic Spacing
+------------------------ */
+nav, p, section, article {
     margin: 16px;
     padding: 8px;
-
 }
 
+/* ------------------------
+   Navigation Styling
+------------------------ */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+nav img {
+    display: block;
+}
+
+/* ------------------------
+   Footer Social Media
+------------------------ */
 .socialmedia a {
     text-decoration: none;
+    margin-right: 10px;
 }
-.hero{
-    position: relative;
 
+.socialmedia img {
+    display: inline-block;
 }
-.hero image{
+
+/* ------------------------
+   Hero Section Styling
+------------------------ */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
     display: block;
     width: 100%;
     height: auto;
 }
-h1{
+
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16%;
+    padding: 16px;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
+}
 
-}
-.hero article img{
-    float: center;
+/* ------------------------
+   Article Image Styling
+------------------------ */
+.hero article img,
+article img.profile-img {
+    float: right;
     width: 125px;
-}
-main p {
-font-size: large;
+    margin: 0 0 10px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
