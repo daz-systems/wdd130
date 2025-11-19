@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,16 +8,17 @@ nav {
     background-color: darkblue;
     padding: 10px;
 }
+
 nav a {
     color: white;
     display: block;
     padding: 20px;
 }
 
-
 h1 {
     color: darkblue;
 }
+
 img {
     width: 150px;
     height: auto;
@@ -28,16 +29,8 @@ img {
     margin: 0 0 1rem 1rem;
 }
 
-
 p {
     padding: 10px;
 }
-/* }this a comment test */
-.box{
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 1);
-    padding: 1rem;
-    background-color: #eee;
-    color: #000;
-}
+
 
