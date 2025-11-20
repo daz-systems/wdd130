@@ -1,165 +1,86 @@
-/* =========================
-   CSS Variables
-========================= */
-:root {
-  --primary-color: #055a05;     /* forest green */
-  --secondary-color: #f4a261;   /* warm sand */
-  --accent1-color: #264653;     /* dark slate blue */
-  --accent2-color: #e9c46a;     /* light golden yellow */
-  --body-font: Arial, Helvetica, sans-serif;
-  --heading-font: "Times New Roman", "Georgia", serif;
-}
-
-/* =========================
-   Universal Reset
-========================= */
+/* UNIVERSAL RESET */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* =========================
-   Body & Page Layout
-========================= */
+/* CSS VARIABLES */
+:root {
+    --primary-color: #055a05;
+    --secondary-color: #f4a261; 
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+    --body-font: Arial, Helvetica, sans-serif;
+    --heading-font: "Times New Roman", Georgia, serif;
+}
+
+/* GLOBAL STYLES */
 body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-  background-color: #fff;
+    font-family: var(--body-font);
 }
 
-/* Limit page width and center content */
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
-}
-
-/* =========================
-   Header & Nav
-========================= */
-header {
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
-  padding: 1rem;
-}
-
+/* HEADER / NAVIGATION */
 nav {
-  background-color: var(--primary-color);
-  padding: 1rem;
+    background-color: var(--secondary-color); /* variable now USED */
+    padding: 20px;
 }
 
 nav a {
-  color: #fff;
-  padding: 0.5rem 1rem;
-  display: block;
-  text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* =========================
-   Headings
-========================= */
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  margin-bottom: 0.5rem;
+/* MAIN CONTENT */
+main {
+    max-width: 840px;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
 }
 
-/* =========================
-   Sections, Paragraphs, Article
-========================= */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+h1 {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
 }
 
-p {
-  padding: 0;
-}
-
-/* =========================
-   Hero Section
-========================= */
-.hero {
-  position: relative;
-  margin-bottom: 2rem;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-}
-
-.hero h1,
-.hero article {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  color: #fff;
-}
-
-/* Article image float inside hero */
-.hero article img {
-  float: right;
-  width: 150px;
-  height: auto;
-  margin-left: 1rem;
-}
-
-/* =========================
-   Main Images
-========================= */
 main img {
-  width: 150px;
-  height: auto;
-  border: 2px solid #fff;
-  padding: 5px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    width: 300px;
+    height: auto;
+    border: 3px solid var(--accent2-color);
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-/* =========================
-   Aside Styling (if used)
-========================= */
+/* ASIDE */
 aside {
-  width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgba(0,0,0,0.2);
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
-  text-align: center;
+    width: 250px;
+    margin: 20px 0;
+    border: 1px solid var(--accent1-color);
+    padding: 15px;
+    background-color: var(--accent2-color);
+    color: #000;
 }
 
 aside img {
-  width: 200px;
-  height: auto;
+    width: 200px;
+    height: auto;
 }
 
-/* =========================
-   Footer & Social Media
-========================= */
+/* PARAGRAPH RULE */
+p {
+    padding: 0;
+}
+
+/* FOOTER */
 footer {
-  margin-top: 15px;
-  border-top: 1px solid #000;
-  text-align: center;
-  padding: 1rem 0;
-}
-
-.socialmedia a {
-  text-decoration: none;
-  margin: 0 0.5rem;
-}
-
-/* =========================
-   Accessibility & Contrast Fixes
-========================= */
-h2 {
-  color: #1a73e8;  /* darker blue for contrast */
-}
-
-body {
-  color: #c0392b;  /* darker red for body text contrast */
-}
-
-.hero h1 {
-  color: #f8f8f8;  /* improved contrast over hero image */
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--secondary-color); /* ensures variable USED */
+    color: white;
 }
