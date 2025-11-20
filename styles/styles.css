@@ -1,36 +1,41 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Limit main content width */
+main {
+    max-width: 840px;
 }
 
-nav {
-    background-color: darkblue;
-    padding: 10px;
+/* Style the aside element */
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
 }
 
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
+/* Set image size inside the aside without distorting */
+aside img {
+    width: 200px;
+    height: auto;
 }
 
-h1 {
-    color: darkblue;
-}
-
-img {
+/* Profile image inside main: override general image styles */
+main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    float: right;
-    margin: 0 0 1rem 1rem;
+    
 }
 
+/* Paragraph padding reset */
 p {
-    padding: 10px;
+    padding: 0;
 }
 
+/* Footer styling */
+footer {
+    margin-top: 15px;            /* separates footer from main */
+    border-top: 1px solid #000;  /* adds top border */
+    text-align: center;          /* centers the footer text */
 
+}
