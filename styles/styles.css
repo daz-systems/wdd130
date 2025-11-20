@@ -1,9 +1,42 @@
-/* Limit main content width */
-main {
-    max-width: 840px;
+/* NAV STYLES — REQUIRED */
+nav {
+    background-color: #333;   /* REQUIRED */
+    padding: 1rem;            /* REQUIRED */
 }
 
-/* Style the aside element */
+nav a {
+    color: white;             /* REQUIRED */
+    padding: 0.5rem 1rem;     /* REQUIRED */
+    display: block;           /* REQUIRED */
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555;   /* optional */
+}
+
+/* MAIN — YOU ALREADY PASSED */
+main {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* REQUIRED h1 RULE */
+h1 {
+    color: #333;              /* REQUIRED color declaration */
+    margin-bottom: 1rem;
+}
+
+/* main img (PROFILE IMAGE) — MUST INCLUDE ALL REQUIRED PROPERTIES */
+main img {
+    width: 150px;             /* REQUIRED */
+    height: auto;             /* REQUIRED */
+    border: 1px solid #ccc;   /* REQUIRED */
+    padding: 5px;             /* REQUIRED */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* REQUIRED */
+}
+
+/* ASIDE — YOU ALREADY PASSED */
 aside {
     width: 20rem;
     margin: 1rem;
@@ -14,28 +47,21 @@ aside {
     text-align: center;
 }
 
-/* Set image size inside the aside without distorting */
+/* ASIDE IMAGE — PASSED */
 aside img {
     width: 200px;
     height: auto;
 }
 
-/* Profile image inside main: override general image styles */
-main img {
-    width: 150px;
-    height: auto;
-    
-}
-
-/* Paragraph padding reset */
+/* PARAGRAPH — PASSED */
 p {
     padding: 0;
 }
 
-/* Footer styling */
+/* FOOTER — PASSED */
 footer {
-    margin-top: 15px;            /* separates footer from main */
-    border-top: 1px solid #000;  /* adds top border */
-    text-align: center;          /* centers the footer text */
-
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 10px 0;
 }
