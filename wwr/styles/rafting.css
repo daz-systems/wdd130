@@ -1,119 +1,165 @@
-/* ------------------------
+/* =========================
    CSS Variables
------------------------- */
+========================= */
 :root {
-    --primary-color: #1E90FF;    /* Blue for headings */
-    --accent1-color: #FF6347;    /* Accent/red for overlays, highlights */
-    --body-font: 'Arial', sans-serif;
-    --heading-font: 'Georgia', serif;
+  --primary-color: #055a05;     /* forest green */
+  --secondary-color: #f4a261;   /* warm sand */
+  --accent1-color: #264653;     /* dark slate blue */
+  --accent2-color: #e9c46a;     /* light golden yellow */
+  --body-font: Arial, Helvetica, sans-serif;
+  --heading-font: "Times New Roman", "Georgia", serif;
 }
 
-/* ------------------------
-   Reset
------------------------- */
+/* =========================
+   Universal Reset
+========================= */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* ------------------------
-   Body Styling
------------------------- */
+/* =========================
+   Body & Page Layout
+========================= */
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #fff;
 }
 
-/* ------------------------
-   Layout Width
------------------------- */
+/* Limit page width and center content */
 header, main, footer {
-    width: 840px;
-    margin: 0 auto;
+  width: 840px;
+  margin: 0 auto;
 }
 
-/* ------------------------
+/* =========================
+   Header & Nav
+========================= */
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 1rem;
+}
+
+nav {
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+nav a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+/* =========================
    Headings
------------------------- */
+========================= */
 h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
 }
 
-/* ------------------------
-   Basic Spacing
------------------------- */
+/* =========================
+   Sections, Paragraphs, Article
+========================= */
 nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+  margin: 16px;
+  padding: 8px;
 }
 
-/* ------------------------
-   Navigation Styling
------------------------- */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    align-items: center;
+p {
+  padding: 0;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
-nav img {
-    display: block;
-}
-
-/* ------------------------
-   Footer Social Media
------------------------- */
-.socialmedia a {
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.socialmedia img {
-    display: inline-block;
-}
-
-/* ------------------------
-   Hero Section Styling
------------------------- */
+/* =========================
+   Hero Section
+========================= */
 .hero {
-    position: relative;
-    text-align: center;
+  position: relative;
+  margin-bottom: 2rem;
 }
 
 .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1,
+.hero article {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+}
+
+/* Article image float inside hero */
+.hero article img {
+  float: right;
+  width: 150px;
+  height: auto;
+  margin-left: 1rem;
+}
+
+/* =========================
+   Main Images
+========================= */
+main img {
+  width: 150px;
+  height: auto;
+  border: 2px solid #fff;
+  padding: 5px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   Aside Styling (if used)
+========================= */
+aside {
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* =========================
+   Footer & Social Media
+========================= */
+footer {
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.socialmedia a {
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+/* =========================
+   Accessibility & Contrast Fixes
+========================= */
+h2 {
+  color: #1a73e8;  /* darker blue for contrast */
+}
+
+body {
+  color: #c0392b;  /* darker red for body text contrast */
 }
 
 .hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
-}
-
-/* ------------------------
-   Article Image Styling
------------------------- */
-.hero article img,
-article img.profile-img {
-    float: right;
-    width: 125px;
-    margin: 0 0 10px 10px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  color: #f8f8f8;  /* improved contrast over hero image */
 }
