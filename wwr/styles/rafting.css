@@ -1,61 +1,131 @@
-/* UNIVERSAL RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* CSS VARIABLES */
+/* =========================
+   CSS VARIABLES
+========================= */
 :root {
-    --primary-color: #055a05;
-    --secondary-color: #f4a261; 
+    --primary-color: #055a05;      /* dark green */
+    --secondary-color: #d97c2e;    /* darkened orange for better contrast */
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
     --body-font: Arial, Helvetica, sans-serif;
     --heading-font: "Times New Roman", Georgia, serif;
 }
 
-/* GLOBAL STYLES */
-body {
-    font-family: var(--body-font);
+/* =========================
+   UNIVERSAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* HEADER / NAVIGATION */
+/* =========================
+   BODY
+========================= */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #fff;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* =========================
+   HEADER / NAV
+========================= */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 1rem;
+}
+
 nav {
-    background-color: var(--secondary-color); /* variable now USED */
-    padding: 20px;
+    background-color: var(--secondary-color);
+    padding: 1rem;
 }
 
 nav a {
-    color: white;
-    padding: 10px 15px;
+    color: #000; /* dark text for sufficient contrast */
+    padding: 0.5rem 1rem;
     display: block;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* MAIN CONTENT */
-main {
-    max-width: 840px;
-    margin: 20px auto;
-    display: flex;
-    gap: 20px;
-}
-
-h1 {
-    color: var(--primary-color);
+/* =========================
+   HEADINGS
+========================= */
+h1, h2 {
     font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
 }
 
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff; /* text over image */
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    color: #fff;
+    width: 300px;
+}
+
+.hero article img {
+    float: right;
+    width: 120px;
+    height: auto;
+    margin-left: 1rem;
+}
+
+/* =========================
+   MAIN CONTENT IMAGES
+========================= */
 main img {
     width: 300px;
     height: auto;
     border: 3px solid var(--accent2-color);
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* ASIDE */
+/* =========================
+   SECTIONS / TEXT
+========================= */
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* =========================
+   ASIDE
+========================= */
 aside {
     width: 250px;
     margin: 20px 0;
@@ -70,17 +140,24 @@ aside img {
     height: auto;
 }
 
-/* PARAGRAPH RULE */
+/* =========================
+   PARAGRAPH
+========================= */
 p {
     padding: 0;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-    padding: 10px 0;
-    background-color: var(--secondary-color); /* ensures variable USED */
-    color: white;
+    padding: 1rem 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin: 0 0.5rem;
 }
