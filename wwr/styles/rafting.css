@@ -1,9 +1,12 @@
 /* RESET */
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 /* VARIABLES */
 :root {
@@ -84,6 +87,7 @@ h1, h2 {
     display: block;
 }
 
+
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -103,16 +107,20 @@ h1, h2 {
     color: #fff;
     width: 320px;
     border-radius: 4px;
-
+    
     display: flex;
     gap: 1rem;
     align-items: center;
 }
 
+
 .hero article img {
     width: 120px;
     border-radius: 4px;
+    float: right;
+    margin-left: 15px;
 }
+
 
 /* =====================================
    HISTORY SECTION — 3-COLUMN GRID
