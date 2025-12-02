@@ -1,6 +1,11 @@
+<link rel="stylesheet" href="styles/poll-form.css">
 <form>
-    <label>Fullname: <input type="text" name="fullname" required></label>
-    <label>Email: <input type="email" name=user-email required></label>
+    <div class="form- item">
+        <label>Fullname: <input type="text" name="fullname" required></label>
+    </div>
+    <div class="form-item column 2">
+        <label>Email: <input type="email" name=user-email required></label>
+    </div>
     <label for="quantity">Select Quantity</label>
     <select name="quantity" id="Quantity">
         <option value="1">One</option>
@@ -18,14 +23,9 @@
     </select>
 
     <label for="pet">Do you Have a Household pet?</label>
-    <label type="checkbox" id="pet" name="Pet"></label>
+    <label input [type="checkbox" ] id="pet" name="Pet"></label>
 
     <label for="feedback">List The Places You Have Lived</label>
     <textarea id="feedback" name="feedback" row="4" placeholder="Still water , florida , Amsterdam"></textarea>
-
-
-
-
-
 
 </form>
