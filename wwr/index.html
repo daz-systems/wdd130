@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | White Water Rafting Adventures Limited</title>
+    <meta name="description"
+        content="Thrilling, safe white water rafting adventures for all skill levels. Explore trips, sign up for our newsletter, and book your next river journey." />
+    <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+
+<body>
+
+    <!-- Header (same as about.html) -->
+    <header>
+        <img src="images/splash-logo.png" alt="White Water Rafting Site Logo" class="logo" />
+        <nav>
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero with absolute-positioned heading on the image -->
+        <section class="hero hero-home" aria-label="Featured">
+            <img src="images/hero.jpg" alt="Rafters paddling through a sunlit rapid" />
+            <div class="hero-message">
+                <h1>Find your flow. Conquer the river.</h1>
+                <p>Guided adventures for first-timers and seasoned paddlers.</p>
+                <a class="btn btn-primary" href="trips.html">Explore trips</a>
+            </div>
+        </section>
+
+        <!-- Newsletter sign up -->
+        <section class="newsletter" aria-labelledby="newsletter-title">
+            <h2 id="newsletter-title">Newsletter sign up</h2>
+            <p>Get route updates, seasonal discounts, and safety tips.</p>
+            <form class="newsletter-form" action="#" method="post">
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required autocomplete="name" placeholder="Your name" />
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required autocomplete="email"
+                        placeholder="you@example.com" inputmode="email" />
+                </div>
+                <button class="btn btn-secondary" type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- CTA to trips -->
+        <section class="cta" aria-labelledby="cta-title">
+            <h2 id="cta-title">Ready to ride?</h2>
+            <p>Browse adventures and book your spot today.</p>
+            <a class="btn btn-primary" href="trips.html">See available trips</a>
+        </section>
+
+        <!-- CSS Grid layout: purpose and offerings -->
+        <section class="purpose-grid" aria-labelledby="purpose-title">
+            <h2 id="purpose-title">Why raft with us</h2>
+            <div class="grid">
+                <article class="card">
+                    <img src="images/guide demostrating safety gear.jpg"
+                        alt="Guide demonstrating safety gear by the river" />
+                    <div class="card-body">
+                        <h3>Safety-first guides</h3>
+                        <p>Certified guides lead every trip with top-tier equipment and thorough briefings.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="images/panoramic river.jpg" alt="Panoramic canyon river" />
+                    <div class="card-body">
+                        <h3>Unforgettable scenery</h3>
+                        <p>From serene stretches to roaring rapids, experience nature at its most alive.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="images/family smilling.jpg" alt="Family smiling in a raft on calm water" />
+                    <div class="card-body">
+                        <h3>Trips for everyone</h3>
+                        <p>Kid-friendly floats, intermediate runs, and expert challenges—choose your level.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="images/helmets a.jpg" alt="Helmets, paddles, and life vests arranged on shore" />
+                    <div class="card-body">
+                        <h3>Quality gear included</h3>
+                        <p>Boats, PFDs, helmets, and paddles are maintained to high standards.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same as about.html) -->
+    <footer>
+        <p>© 2025 White Water Rafting Adventures | David Onyemauche Azubuike</p>
+        <nav class="socialmedia">
+            <a href="#"><img src="images/facebook-logo.png" alt="Facebook icon" /></a>
+            <a href="#"><img src="images/insta-logo.png" alt="Instagram logo" /></a>
+            <a href="#"><img src="images/linkedin.png" alt="LinkedIn icon" /></a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

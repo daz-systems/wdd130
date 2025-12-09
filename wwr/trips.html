@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trips | White Water Rafting Adventures Limited</title>
+    <meta name="description"
+        content="Browse detailed rafting trips with photos, skill levels, durations, pricing, seasons, and included equipment." />
+    <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+
+<body>
+
+    <!-- Header (same as about.html) -->
+    <header>
+        <img src="images/splash-logo.png" alt="White Water Rafting Site Logo" class="logo" />
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html" aria-current="page">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Call to action to contact -->
+        <section class="cta cta-contact" aria-labelledby="contact-cta-title">
+            <h1 id="contact-cta-title">Pick your adventure</h1>
+            <p>Questions about skill level, group rates, or dates? We’re here to help.</p>
+            <a class="btn btn-primary" href="contact.html">Contact us</a>
+        </section>
+
+        <!-- Trip descriptions with photos (CSS Grid, not single column) -->
+        <section class="trips-list" aria-labelledby="trips-title">
+            <h2 id="trips-title">Featured trips</h2>
+            <div class="grid trips-grid">
+                <article class="trip-card">
+                    <img src="images/bigineer rafters.jpg" alt="Beginner group rafting gentle rapids" />
+                    <div class="card-body">
+                        <h3>River Breeze (Beginner)</h3>
+                        <p>Perfect for first-timers and families. Gentle Class I–II rapids, scenic stops, and on-river
+                            instruction.</p>
+                        <ul class="details">
+                            <li><strong>Duration:</strong> 3–4 hours</li>
+                            <li><strong>Season:</strong> Year-round</li>
+                            <li><strong>Includes:</strong> Raft, PFD, helmet, paddle</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="trip-card">
+                    <img src="images/rafter dropping.jpg" alt="Rafters dropping into a Class III rapid" />
+                    <div class="card-body">
+                        <h3>Canyon Runner (Intermediate)</h3>
+                        <p>Progress to Class II–III with tight turns and splashy waves through stunning canyon
+                            corridors.</p>
+                        <ul class="details">
+                            <li><strong>Duration:</strong> Half day</li>
+                            <li><strong>Season:</strong> Mar–Oct</li>
+                            <li><strong>Includes:</strong> Gear, guide, snack</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="trip-card">
+                    <img src="images/advanced rafters.jpg" alt="Advanced crew navigating a powerful Class IV rapid" />
+                    <div class="card-body">
+                        <h3>Rapid Forge (Advanced)</h3>
+                        <p>For experienced paddlers. Technical Class III–IV drops, swift water, and precise teamwork
+                            required.</p>
+                        <ul class="details">
+                            <li><strong>Duration:</strong> Full day</li>
+                            <li><strong>Season:</strong> May–Sep</li>
+                            <li><strong>Includes:</strong> Gear, lunch, safety training</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Trips table -->
+        <section class="trips-table-section" aria-labelledby="table-title">
+            <h2 id="table-title">All available trips</h2>
+            <div class="table-wrap" role="region" aria-label="Trips details" tabindex="0">
+                <table class="trips-table">
+                    <caption>Trip overview: skill level, duration, price, season, and included equipment</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Trip</th>
+                            <th scope="col">Skill level</th>
+                            <th scope="col">Duration</th>
+                            <th scope="col">Season</th>
+                            <th scope="col">Price (per person)</th>
+                            <th scope="col">Included</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>River Breeze</td>
+                            <td>Beginner (Class I–II)</td>
+                            <td>3–4 hours</td>
+                            <td>Year-round</td>
+                            <td>$65</td>
+                            <td>Raft, PFD, helmet, paddle</td>
+                        </tr>
+                        <tr>
+                            <td>Canyon Runner</td>
+                            <td>Intermediate (Class II–III)</td>
+                            <td>Half day</td>
+                            <td>Mar–Oct</td>
+                            <td>$95</td>
+                            <td>Gear, guide, snack</td>
+                        </tr>
+                        <tr>
+                            <td>Rapid Forge</td>
+                            <td>Advanced (Class III–IV)</td>
+                            <td>Full day</td>
+                            <td>May–Sep</td>
+                            <td>$145</td>
+                            <td>Gear, lunch, safety training</td>
+                        </tr>
+                        <tr>
+                            <td>Sunset Drift</td>
+                            <td>Beginner</td>
+                            <td>2 hours (evening)</td>
+                            <td>Year-round</td>
+                            <td>$55</td>
+                            <td>Raft, PFD, paddle</td>
+                        </tr>
+                        <tr>
+                            <td>Thunder Gorge</td>
+                            <td>Advanced</td>
+                            <td>Full day</td>
+                            <td>Jun–Sep</td>
+                            <td>$165</td>
+                            <td>Gear, lunch, safety training</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same as about.html) -->
+    <footer>
+        <p>© 2025 White Water Rafting Adventures | David Onyemauche Azubuike</p>
+        <nav class="socialmedia">
+            <a href="#"><img src="images/facebook-logo.png" alt="Facebook icon" /></a>
+            <a href="#"><img src="images/insta-logo.png" alt="Instagram logo" /></a>
+            <a href="#"><img src="images/linkedin.png" alt="LinkedIn icon" /></a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
